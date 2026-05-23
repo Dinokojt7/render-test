@@ -5,6 +5,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.set("etag", false);
+app.use(express.static("dist"));
 
 let notes = [
   {
